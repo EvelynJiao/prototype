@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<!-- Title for page -->
+        <title>Contact Us | Starlight Children's Foundation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- import desktop site css if screen size is greater than or equals to 601 px -->
+        <link href="style_desktop.css" media="screen and (min-width: 601px)" rel="stylesheet">
+        <!-- import mobile site css if screen size is less than or equals to 600 px -->
+        <link href="style_mobile.css" media="screen and (max-width: 600px)" rel="stylesheet">
+    </head>
+    <body>
+    	<!-- logo and navigation bar -->
+        <div class="topnav" id="myTopNav">
+            <a href="home.html"><img src="images/logo.webp" class="logo-size"></a>
+            <div class="topnav-menu" style="float:right;" id="myTopNavMenu">
+                <a href="aboutus.html" class="btn btn-menu">About Us</a>
+                <a href="javascript:void(0);" class="btn btn-menu-actived">Contact Us</a>
+                <a href="programmes.html" class="btn btn-menu">Programmes</a>
+                <a class="btn btn-menu-donate" href="donate.html">Donate</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			    	<img src="images/icon/bar.png" style="width:30px;">
+			  	</a>
+            </div>
+        </div>
+        
+        <!-- page title without image -->
+		<div class="section-content">
+       		<div class="pageTitleText-alt"><h1><b>Contact us</b></h1><h2>How can we help?</h2></div>
+        </div>
+        
+        <!-- description -->
+        <div class="full-section-content">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-sm-12 col-md-12 text-center">
+        				<h4>Shoot us a message outlining your question, feedback or idea and we'll sure to get back to you as soon as humanly possible!</h4>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        
+        <!-- a form for user to submit so that we can contact them -->
+        <div class="full-section-content">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-sm-12 col-md-12">
+        				<div class="row">
+		        			<div class="col-md-2"></div>
+		        			<div class="col-sm-12 col-md-8">
+		        				<div class="row"><div class="col-md-12"><h2 class="text-purple">Message</h2></div></div>
+		        				<div class="row">
+		        					<div class="col-sm-12 col-md-12"><p class="text-purple">Name</p><input type="text" class="form-control" placeholder="E.g. John Smith*"></div>
+		        				</div>
+		        				<br>
+		        				<div class="row">
+		        					<div class="col-sm-12 col-md-12"><p class="text-purple">Contact Number</p><input type="text" class="form-control" placeholder="E.g. 1 300 727 827*"></div>
+		        				</div>
+		        				<br>
+		        				<div class="row">
+		        					<div class="col-sm-12 col-md-12"><p class="text-purple">Title</p><input type="text" class="form-control" placeholder="Short description of your enquiry*"></div>
+		        				</div>
+		        				<br>
+		        				<div class="row">
+		        					<div class="col-sm-12 col-md-12"><p class="text-purple">Message</p><textarea rows="10" placeholder="Message*" class="form-control"></textarea></div>
+		        				</div>
+		        				<br>
+		        				<div class="row text-center">
+		        					<div class="col-sm-12 col-md-12"><button class="btn-tertiary">Send</button></div>
+		        				</div>
+		        			</div>
+		        			<div class="col-md-2"></div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+		<!-- footer - address, contact and mailing list -->
+        <div id="bottomNavigator2">
+        	<div class="container">
+        		<div class="row margin-left">
+        			<div class="col-sm-12 col-md-3 text-left">
+        				<h3>Address</h3>
+        				<h5>Level 3, 80 Chandos St. <br>Naremburn NSW 2065 <br>PO Box 101, St leonards NSW 1590</h5>
+        			</div>
+        			<div class="col-sm-12 col-md-3 text-left">
+        				<h3>Contact Us</h3>
+        				<h5>mail@starlight.org.au</h5>
+        				<h5>Tel: 1300 727 827</h5>
+        			</div>
+        			<div class="col-sm-12 col-md-3 text-left">
+        				<h3>Mailing List</h3>
+        				<div><input type="text" class="form-control" placeholder="Enter your email here*"></div>
+        				<div style="margin: 20px 0;"><a href="javascript:void(0);" class="btn-subscribe">SUBSCRIBE</a></div>
+        				<div>
+        					<a href="http://instagram.com/starlightau" target="_blank"><img src="images/icon/instagram.png" style="width:30px;"></a>
+        					<a href="https://www.facebook.com/StarlightAustralia" target="_blank"><img src="images/icon/facebook.png" style="width:30px;"></a>
+        					<a href="https://twitter.com/Starlight_star" target="_blank"><img src="images/icon/twitter.png" style="width:30px;"></a>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+         
+        <script>
+			function myFunction() {// have a bar to open up the menu in mobile site
+				var x = document.getElementById("myTopNavMenu");
+			  	if (x.className === "topnav-menu") {
+			    	x.className += " responsive";
+			  	} else {
+			    	x.className = "topnav-menu";
+			  	}
+			}
+		</script>
+    </body>
+</html>

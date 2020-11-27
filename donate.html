@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<!-- Title for page -->
+        <title>Donate | Starlight Children's Foundation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- import desktop site css if screen size is greater than or equals to 601 px -->
+        <link href="style_desktop.css" media="screen and (min-width: 601px)" rel="stylesheet">
+        <!-- import mobile site css if screen size is less than or equals to 600 px -->
+        <link href="style_mobile.css" media="screen and (max-width: 600px)" rel="stylesheet">
+    </head>
+    <body>
+    	<!-- logo and navigation bar -->
+        <div class="topnav" id="myTopNav">
+            <a href="home.html"><img src="images/logo.webp" class="logo-size"></a>
+            <div class="topnav-menu" style="float:right;" id="myTopNavMenu">
+                <a href="aboutus.html" class="btn btn-menu">About Us</a>
+                <a href="contactUs.html" class="btn btn-menu">Contact Us</a>
+                <a href="javascript:void(0);" class="btn btn-menu-actived">Programmes</a>
+                <a class="btn btn-menu-donate" href="donate.html">Donate</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			    	<img src="images/icon/bar.png" style="width:30px;">
+			  	</a>
+            </div>
+        </div>
+        
+        <!-- page title with image -->
+		<div class="full-section-content section-content">
+       		<div class="pageTitleText" style="background-color: #52288E;"><h1><b>Donate to bring happiness to sick kids</b></h1></div>
+        </div>
+        
+        <!-- Donation form -->
+        <div class="full-section-content section-content">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8 text-center">
+        				<h2>1. Donation amount (required)</h2>
+        			</div>
+        			<div class="col-md-2"></div>
+        		</div>
+        		<br><br><br>
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8 text-center">
+        				<button class="btn-selection-selected period" onclick="changePeriod('once')" id="period_once">Once</button>
+        				<button class="btn-selection period"  onclick="changePeriod('monthly')" id="period_monthly">Monthly</button>
+        			</div>
+        			<div class="col-md-2"></div>
+        		</div>
+        		<br><br><br>
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8 text-center">
+        				<button class="btn-selection price" onclick="changePrice('10')" id="price_10">$10</button>
+        				<button class="btn-selection-selected price" onclick="changePrice('30')" id="price_30">$30</button>
+        				<button class="btn-selection price" onclick="changePrice('50')" id="price_50">$50</button>
+        			</div>
+        			<div class="col-md-2"></div>
+        		</div>
+        		<br><br><br>
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8 text-center">
+        				<input type="text" class="form-control" placeholder="Other amount">
+        			</div>
+        			<div class="col-md-2"></div>
+        		</div>
+        	</div>
+        </div>
+        
+        <!-- donor detail -->
+        <div class="full-section-content2 section-content">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8 text-center">
+        				<h2>2. Donor details (required)</h2>
+        			</div>
+        			<div class="col-md-2"></div>
+        		</div>
+        		<br>
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8 text-center">
+        				<input type="text" class="form-control" placeholder="First Name" required>
+        			</div>
+        			<div class="col-md-2"></div>
+        		</div>
+        		<br>
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8 text-center">
+        				<input type="text" class="form-control" placeholder="last Name" required>
+        			</div>
+        			<div class="col-md-2"></div>
+        		</div>
+        		<br>
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8 text-center">
+        				<input type="text" class="form-control" placeholder="Email" required>
+        			</div>
+        			<div class="col-md-2"></div>
+        		</div>
+        		<br>
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8 text-center">
+        				<input type="text" class="form-control" placeholder="Postcode" required>
+        			</div>
+        			<div class="col-md-2"></div>
+        		</div>
+        	</div>
+        </div>
+        
+        <!-- payment -->
+        <div class="full-section-content section-content">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8 text-center">
+        				<h2>3. Payment (required)</h2>
+        			</div>
+        			<div class="col-md-2"></div>
+        		</div>
+        		<br>
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8">
+        				<button class="btn-selection-selected payment" onclick="changePayment('cc')" id="payment_cc">Credit Card</button>
+        				<button class="btn-selection payment" onclick="changePayment('paypal')" id="payment_paypal">Paypal</button>
+        			</div>
+        			<div class="col-md-2"></div>
+        		</div>
+        		<br>
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8 text-center">
+        				<input type="text" class="form-control" placeholder="Cardholder Name" required>
+        			</div>
+        			<div class="col-md-2"></div>
+        		</div>
+        		<br>
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8 text-center">
+        				<input type="text" class="form-control" placeholder="Card Number" required>
+        			</div>
+        			<div class="col-md-2"></div>
+        		</div>
+        		<br>
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8 text-center">
+        				<input type="text" class="form-control" placeholder="Expiry Date" required>
+        			</div>
+        			<div class="col-md-2"></div>
+        		</div>
+        		<br>
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8 text-center">
+        				<input type="text" class="form-control" placeholder="CVV" required>
+        			</div>
+        			<div class="col-md-2"></div>
+        		</div>
+        		<br>
+        		<div class="row">
+        			<div class="col-md-2"></div>
+        			<div class="col-sm-12 col-md-8"><button class="btn-primary">Donate Now</button></div>
+        			<div class="col-md-2"></div>
+        		</div>
+        	</div>
+        </div>
+        
+        <!-- footer - address, contact and mailing list -->
+        <div id="bottomNavigator">
+        	<div class="container">
+        		<div class="row margin-left">
+        			<div class="col-sm-12 col-md-3 text-left">
+        				<h3>Address</h3>
+        				<h5>Level 3, 80 Chandos St. <br>Naremburn NSW 2065 <br>PO Box 101, St leonards NSW 1590</h5>
+        			</div>
+        			<div class="col-sm-12 col-md-3 text-left">
+        				<h3>Contact Us</h3>
+        				<h5>mail@starlight.org.au</h5>
+        				<h5>Tel: 1300 727 827</h5>
+        			</div>
+        			<div class="col-sm-12 col-md-3 text-left">
+        				<h3>Mailing List</h3>
+        				<div><input type="text" class="form-control" placeholder="Enter your email here*"></div>
+        				<div style="margin: 20px 0;"><a href="javascript:void(0);" class="btn-subscribe">SUBSCRIBE</a></div>
+        				<div>
+        					<a href="http://instagram.com/starlightau" target="_blank"><img src="images/icon/instagram.png" style="width:30px;"></a>
+        					<a href="https://www.facebook.com/StarlightAustralia" target="_blank"><img src="images/icon/facebook.png" style="width:30px;"></a>
+        					<a href="https://twitter.com/Starlight_star" target="_blank"><img src="images/icon/twitter.png" style="width:30px;"></a>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        
+        <script>
+			function myFunction() {// have a bar to open up the menu in mobile site
+				var x = document.getElementById("myTopNavMenu");
+			  	if (x.className === "topnav-menu") {
+			    	x.className += " responsive";
+			  	} else {
+			    	x.className = "topnav-menu";
+			  	}
+			}
+			
+			function changePeriod(period) {	//choose to pay once or monthly
+				var x = document.getElementsByClassName("period");
+				for (var i=0; i<x.length; i++) {
+					x[i].className = "btn-selection period";
+				}
+				if (period == 'once') {
+					var y = document.getElementById("period_once");
+					y.className = "btn-selection-selected period";
+				} else {
+					var y = document.getElementById("period_monthly");
+					y.className = "btn-selection-selected period";
+				}
+			}
+			
+			function changePrice(price) {	//choose to select price
+				var x = document.getElementsByClassName("price");
+				for (var i=0; i<x.length; i++) {
+					x[i].className = "btn-selection price";
+				}
+				if (price == '10') {
+					var y = document.getElementById("price_10");
+					y.className = "btn-selection-selected price";
+				} else if (price == '30'){
+					var y = document.getElementById("price_30");
+					y.className = "btn-selection-selected price";
+				} else {
+					var y = document.getElementById("price_50");
+					y.className = "btn-selection-selected price";
+				}
+			}
+			
+			function changePayment(payment) {	//choose to select preferred payment way
+				var x = document.getElementsByClassName("payment");
+				for (var i=0; i<x.length; i++) {
+					x[i].className = "btn-selection payment";
+				}
+				if (payment == 'cc') {
+					var y = document.getElementById("payment_cc");
+					y.className = "btn-selection-selected payment";
+				} else {
+					var y = document.getElementById("payment_paypal");
+					y.className = "btn-selection-selected payment";
+				}
+			}
+		</script>
+    </body>
+</html>
